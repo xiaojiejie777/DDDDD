@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hr-generator" />
+        <module name="hr-server" />
+        <module name="hr-email" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hr-email" target="11" />
+      <module name="hr-generator" target="1.7" />
+      <module name="hr-server" target="11" />
+      <module name="Wow-hr" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Wow-hr" options="-parameters" />
+      <module name="hr-email" options="-parameters" />
+      <module name="hr-generator" options="-parameters" />
+      <module name="hr-server" options="-parameters" />
+    </option>
+  </component>
+</project>
